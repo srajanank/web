@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance - Fine Jewelry</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: #d4af37;
+            padding: 20px;
+            font-size: 32px;
+            font-family: 'Playfair Display', serif;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        header img {
+            height: 80px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #b8860b;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 40px 20px;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .buy-btn {
+            display: block;
+            padding: 10px 20px;
+            background: #d4af37;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .about, .contact {
+            text-align: center;
+            padding: 40px;
+            background: #eee;
+        }
+        .about h2, .contact h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #b8860b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://imgs.search.brave.com/P-TvGLYn4dYicfa3GTeEARHd2LBOSQmf5WWAqklF_JY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vM2U5YmRh/ZjQxNzEwMTBkNTYy/ODk4OWJlNTZkZDdm/ZmUxOTNkMmNiYS0z/NzB4Mzc0LnBuZz93/PTEwODAmcT03MiZm/bT13ZWJw" alt="Elegance Logo">
+        Elegance - Fine Jewelry
+        <img src="https://imgs.search.brave.com/P-TvGLYn4dYicfa3GTeEARHd2LBOSQmf5WWAqklF_JY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vM2U5YmRh/ZjQxNzEwMTBkNTYy/ODk4OWJlNTZkZDdm/ZmUxOTNkMmNiYS0z/NzB4Mzc0LnBuZz93/PTEwODAmcT03MiZm/bT13ZWJw" alt="Elegance Logo">
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#jewelry-collection">Collection</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="about" id="about">
+        <h2>About Us</h2>
+        <p>Discover timeless elegance with our exquisite jewelry collection. At Elegance, we craft fine jewelry pieces that blend sophistication with superior craftsmanship. Each piece is meticulously designed to enhance your beauty and make every moment special.</p>
+        <p>Whether you're looking for a dazzling diamond ring, a luxurious gold necklace, or delicate pearl earrings, our collection offers a range of stunning pieces that exude class and charm. Experience the finest quality and exceptional service with Elegance.</p>
+    </div>
+    <div class="container" id="jewelry-collection">
+        <h2>✨ Our Jewelry Collection ✨</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://imgs.search.brave.com/Gx6pJmUm_dKE63VOEp_-NTedIK1estQB2lyANg50ml8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWct/dmEubXlzaG9wbGlu/ZS5jb20vaW1hZ2Uv/c3RvcmUvMjAwMTM0/MTI3OC8xNjU4ODg5/ODA5ODc1LzVfMjku/anBlZz93PTEwMDAm/aD0xMDAw" alt="Gold Necklace">
+                <h3>Gold Necklace</h3>
+                <p>Elegant 18K gold necklace for special occasions.</p>
+                <p>💰 Price: ₹15,999</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://imgs.search.brave.com/o1EWnYJokcXqXsrZp470eoBFb_BvtH_V9SZQ42aaE3I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEyLzczLzMzLzMw/LzM2MF9GXzEyNzMz/MzMwNzlfQzFia201/RW9qdGxPWVp1VXZh/Tm42WUlzMmJFT3pX/d2QuanBn" alt="Diamond Ring">
+                <h3>Diamond Ring</h3>
+                <p>Brilliant cut diamond ring with platinum band.</p>
+                <p>💰 Price: ₹49,999</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://imgs.search.brave.com/TTJOR_KZIwzgrDwyyDo-e-T2JwW-p-JCS2mKbt1QWdU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YW5ub3VzaGthLmNv/bS9tZWRpYS9jYXRh/bG9nL3Byb2R1Y3Qv/Y2FjaGUvMDBjNGQ1/YWZkMGI5MzM2MDIz/MWYzMjQ4NmQzODEy/YTUvQi8wL0IwMTYw/OThfMS5qcGc" alt="Pearl Earrings">
+                <h3>Pearl Earrings</h3>
+                <p>Classic freshwater pearl earrings.</p>
+                <p>💰 Price: ₹7,999</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@elegancejewelry.com</p>
+        <p>Phone: +91 9876543210</p>
+    </div>
+</body>
+</html>
